@@ -17,8 +17,8 @@
   --gray: #9ca3af;
   --gray-light: #d1d5db;
 
-  --blue: #3b82f6;
-  --blue-light: #60a5fa;
+  --blue: #0000ff;
+  --blue-light: #00ffff;
   --blue-muted: #7c93c2;
 
   --font-main: "Montserrat", sans-serif;
@@ -108,15 +108,43 @@ ul {
 
 /* LOGO */
 
-.logo {
+.hero-logo {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
+  gap: 18px;
+  margin-bottom: 24px;
+  padding: 18px 24px;
+  border-radius: 32px;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(0, 255, 255, 0.18);
+}
+
+.hero-logo-image {
+  width: 90px;
+  height: auto;
+  display: block;
+}
+
+.hero-logo-text {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1.05;
+  color: var(--white);
+}
+
+.hero-logo-brand {
   font-family: var(--font-title);
-  font-size: 18px;
+  color: var(--blue);
+  font-size: clamp(24px, 3vw, 40px);
   font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.hero-logo-tag {
+  color: var(--blue-light);
+  font-size: 12px;
+  letter-spacing: 0.5em;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .navbar-container {
