@@ -15,8 +15,24 @@ document.addEventListener('DOMContentLoaded', function(){
   if (menuToggle && navMenu) {
     menuToggle.addEventListener('click', function(){
       navMenu.classList.toggle('open');
-      // accessible text
-      this.setAttribute('aria-expanded', navMenu.classList.contains('open'))
+      this.setAttribute('aria-expanded', navMenu.classList.contains('open'));
+    });
+  }
+
+  // Carrusel de servicios con flechas
+  const servicesCarousel = document.getElementById('servicesCarousel');
+  const prevButton = document.querySelector('.carousel-prev');
+  const nextButton = document.querySelector('.carousel-next');
+
+  if (servicesCarousel && prevButton && nextButton) {
+    const scrollAmount = 320;
+
+    prevButton.addEventListener('click', () => {
+      servicesCarousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    nextButton.addEventListener('click', () => {
+      servicesCarousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     });
   }
 });

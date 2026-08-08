@@ -617,62 +617,75 @@ nav a:hover {
 
 }
 
-.services-grid {
-
+.services-carousel {
   display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 18px;
+  align-items: center;
+}
 
-  grid-template-columns: repeat(4, minmax(260px, 1fr));
-
+.services-grid {
+  display: flex;
+  overflow-x: auto;
   gap: 20px;
-
-  align-items: start;
-
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
 .services-grid::-webkit-scrollbar {
-
   height: 10px;
-
 }
 
 .services-grid::-webkit-scrollbar-track {
-
   background: transparent;
-
 }
 
 .services-grid::-webkit-scrollbar-thumb {
-
   background: rgba(0, 255, 255, 0.18);
-
   border-radius: 999px;
-
 }
 
-@media (max-width: 1000px) {
+.service-card {
+  min-width: 280px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.carousel-arrow {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--white);
+  font-size: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.carousel-arrow:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .services-carousel {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel-arrow {
+    width: 100%;
+    border-radius: 16px;
+  }
 
   .services-grid {
-
-    display: flex;
-
-    overflow-x: auto;
-
-    scroll-snap-type: x mandatory;
-
-    padding-bottom: 10px;
-
+    gap: 16px;
   }
-
-  .service-card {
-
-    min-width: 280px;
-
-    flex: 0 0 auto;
-
-    scroll-snap-align: start;
-
-  }
-
 }
 
 @media (max-width: 768px) {
