@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220" height="80" viewBox="0 0 220 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blue-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="silver-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5e7eb"/>
+      <stop offset="100%" stop-color="#9ca3af"/>
+    </linearGradient>
+  </defs>
+  <rect width="220" height="80" rx="18" fill="#0b111a"/>
+  <path d="M25 24H55V56" stroke="url(#blue-gradient)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M70 24H100V56" stroke="url(#silver-gradient)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M28 32H97" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <text x="110" y="45" fill="#ffffff" font-family="Oswald, sans-serif" font-size="30" font-weight="700">BarberG</text>
+  <text x="110" y="68" fill="#60a5fa" font-family="Montserrat, sans-serif" font-size="12" font-weight="700">STUDIO</text>
+</svg>
