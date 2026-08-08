@@ -111,16 +111,17 @@ ul {
 .hero-logo {
   display: inline-flex;
   align-items: center;
-  gap: 18px;
-  margin-bottom: 24px;
-  padding: 18px 24px;
-  border-radius: 32px;
-  background: rgba(0, 0, 0, 0.45);
+  gap: 12px;
+  margin-bottom: 18px;
+  padding: 12px 18px;
+  border-radius: 28px;
+  background: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(0, 255, 255, 0.18);
+  box-shadow: 0 18px 60px rgba(0, 255, 255, 0.06);
 }
 
 .hero-logo-image {
-  width: 90px;
+  width: 64px;
   height: auto;
   display: block;
 }
@@ -135,9 +136,9 @@ ul {
 .hero-logo-brand {
   font-family: var(--font-title);
   color: var(--blue);
-  font-size: clamp(24px, 3vw, 40px);
+  font-size: clamp(18px, 2.2vw, 32px);
   font-weight: 700;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.18em;
 }
 
 .hero-logo-tag {
@@ -148,7 +149,7 @@ ul {
 }
 
 .navbar-container {
-  min-height: 80px;
+  min-height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -156,25 +157,25 @@ ul {
 }
 
 .logo-image {
-  width: 56px;
+  width: 40px;
   height: auto;
   display: block;
 }
 
-.logo-text {
-  display: inline-flex;
-  flex-direction: column;
-  line-height: 1.05;
-  color: var(--white);
-  text-align: left;
-}
-
 .logo-name {
   color: var(--white);
+  font-size: 12px;
+}
+.logo-brand {
+  color: var(--blue);
   font-size: 14px;
 }
 
-.logo-brand {
+.logo-tag {
+  color: var(--white);
+  font-size: 10px;
+  letter-spacing: 1.6px;
+}
   color: var(--blue);
   font-size: 18px;
 }
@@ -280,7 +281,7 @@ nav a:hover {
 
   align-items: center;
 
-  background-image: url("../img/portada.jpg");
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.65)), url("../img/portada.jpg");
 
   background-size: cover;
 
@@ -558,9 +559,67 @@ nav a:hover {
 
   display: grid;
 
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(260px, 1fr));
 
   gap: 20px;
+
+  align-items: start;
+
+}
+
+.services-grid::-webkit-scrollbar {
+
+  height: 10px;
+
+}
+
+.services-grid::-webkit-scrollbar-track {
+
+  background: transparent;
+
+}
+
+.services-grid::-webkit-scrollbar-thumb {
+
+  background: rgba(0, 255, 255, 0.18);
+
+  border-radius: 999px;
+
+}
+
+@media (max-width: 1000px) {
+
+  .services-grid {
+
+    display: flex;
+
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+
+    padding-bottom: 10px;
+
+  }
+
+  .service-card {
+
+    min-width: 280px;
+
+    flex: 0 0 auto;
+
+    scroll-snap-align: start;
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .service-card {
+
+    min-width: 85vw;
+
+  }
 
 }
 
