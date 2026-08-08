@@ -1,63 +1,610 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>The BarberG Studio</title>
-  <link rel="stylesheet" href="css/style.css" />
+
+  <meta
+    name="description"
+    content="The BarberG Studio — Tu estilo. Tu identidad. Reserva tu cita por WhatsApp."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container">
-      <img src="img/logo.png" alt="The BarberG Studio" class="logo" />
-      <nav class="nav">
-        <a href="#">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#galeria">Galería</a>
-        <a href="#contacto">Contacto</a>
+
+  <!-- =========================
+     NAVBAR
+  ========================== -->
+
+  <header class="navbar">
+
+    <div class="container navbar-container">
+
+      <a href="#inicio" class="logo">
+        The BarberG <span>Studio</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Abrir menú"
+      >
+        ☰
+      </button>
+
+      <nav id="navMenu">
+
+        <a href="#inicio">
+          Inicio
+        </a>
+
+        <a href="#servicios">
+          Servicios
+        </a>
+
+        <a href="#galeria">
+          Galería
+        </a>
+
+        <a href="#ubicacion">
+          Ubicación
+        </a>
+
+        <a href="#contacto">
+          Contacto
+        </a>
+
+        <a
+          href="https://wa.me/34633063177"
+          target="_blank"
+          class="nav-button"
+        >
+          Reservar
+        </a>
+
       </nav>
+
     </div>
+
   </header>
 
   <main>
-    <section class="hero">
-      <img src="img/portada.jpg" alt="Portada" />
-      <div class="hero-text container">
-        <h1>The BarberG Studio</h1>
-        <p>Cortes clásicos y modernos — Estilo y precisión.</p>
+
+    <!-- =========================
+       PORTADA
+    ========================== -->
+
+    <section
+      id="inicio"
+      class="hero"
+    >
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+
+        <p class="hero-small">
+          THE BARBERG STUDIO
+        </p>
+
+        <h1>
+
+          TU ESTILO.
+
+          <br>
+
+          <span>
+            TU IDENTIDAD.
+          </span>
+
+        </h1>
+
+        <p class="hero-text">
+          Cortes, estilo y personalidad
+          en un mismo lugar.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            href="https://wa.me/34633063177?text=Hola%20The%20BarberG%20Studio,%20quiero%20reservar%20una%20cita."
+            target="_blank"
+            class="btn btn-primary"
+          >
+
+            💬 Reservar cita
+
+          </a>
+
+          <a
+            href="#servicios"
+            class="btn btn-secondary"
+          >
+
+            Ver servicios
+
+          </a>
+
+        </div>
+
       </div>
-    </section>
 
-    <section id="servicios" class="container servicios">
-      <h2>Servicios</h2>
-      <ul>
-        <li>Corte de cabello</li>
-        <li>Afeitado clásico</li>
-        <li>Barba y perfilado</li>
-      </ul>
-    </section>
+      <div class="scroll-down">
 
-    <section id="galeria" class="container galeria">
-      <h2>Galería</h2>
-      <div class="grid">
-        <img src="img/corte1.jpg" alt="Corte 1" />
-        <img src="img/corte2.jpg" alt="Corte 2" />
-        <img src="img/corte3.jpg" alt="Corte 3" />
+        ↓
+
       </div>
+
     </section>
 
-    <section id="contacto" class="container contacto">
-      <h2>Contacto</h2>
-      <p>Reserva tu cita llamando al <strong>+34 600 000 000</strong> o visitándonos en el estudio.</p>
+    <!-- =========================
+       SERVICIOS
+    ========================== -->
+
+    <section
+      id="servicios"
+      class="section services"
+    >
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <p>
+            LO QUE HACEMOS
+          </p>
+
+          <h2>
+            Nuestros servicios
+          </h2>
+
+          <span></span>
+
+        </div>
+
+        <div class="services-grid">
+
+          <!-- SERVICIO 1 -->
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              ✂️
+            </div>
+
+            <h3>
+              Corte de pelo
+            </h3>
+
+            <p>
+              Corte personalizado adaptado
+              a tu estilo y tipo de cabello.
+            </p>
+
+            <div class="service-bottom">
+
+              <strong>
+                15€
+              </strong>
+
+              <a
+                href="https://wa.me/34633063177?text=Hola,%20quiero%20reservar%20un%20corte%20de%20pelo."
+                target="_blank"
+              >
+                Reservar
+              </a>
+
+            </div>
+
+          </article>
+
+          <!-- SERVICIO 2 -->
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              ✂️
+            </div>
+
+            <h3>
+              Corte + Barba
+            </h3>
+
+            <p>
+              Corte de pelo acompañado
+              de arreglo y diseño de barba.
+            </p>
+
+            <div class="service-bottom">
+
+              <strong>
+                22€
+              </strong>
+
+              <a
+                href="https://wa.me/34633063177?text=Hola,%20quiero%20reservar%20un%20corte%20con%20barba."
+                target="_blank"
+              >
+                Reservar
+              </a>
+
+            </div>
+
+          </article>
+
+          <!-- SERVICIO 3 -->
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              ✨
+            </div>
+
+            <h3>
+              Arreglo de barba
+            </h3>
+
+            <p>
+              Perfilado, definición y cuidado
+              de la barba para un acabado impecable.
+            </p>
+
+            <div class="service-bottom">
+
+              <strong>
+                10€
+              </strong>
+
+              <a
+                href="https://wa.me/34633063177?text=Hola,%20quiero%20reservar%20un%20arreglo%20de%20barba."
+                target="_blank"
+              >
+                Reservar
+              </a>
+
+            </div>
+
+          </article>
+
+          <!-- SERVICIO 4 -->
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              ⭐
+            </div>
+
+            <h3>
+              Corte Premium
+            </h3>
+
+            <p>
+              Una experiencia completa para
+              renovar totalmente tu look.
+            </p>
+
+            <div class="service-bottom">
+
+              <strong>
+                25€
+              </strong>
+
+              <a
+                href="https://wa.me/34633063177?text=Hola,%20quiero%20reservar%20un%20corte%20premium."
+                target="_blank"
+              >
+                Reservar
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
     </section>
+
+    <!-- =========================
+       GALERÍA
+    ========================== -->
+
+    <section
+      id="galeria"
+      class="section gallery"
+    >
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <p>
+            THE BARBERG STYLE
+          </p>
+
+          <h2>
+            Nuestra galería
+          </h2>
+
+          <span></span>
+
+        </div>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item">
+
+            <img
+              src="img/corte1.jpg"
+              alt="Corte de pelo en The BarberG Studio"
+            >
+
+          </div>
+
+          <div class="gallery-item">
+
+            <img
+              src="img/corte2.jpg"
+              alt="Trabajo de barbería"
+            >
+
+          </div>
+
+          <div class="gallery-item">
+
+            <img
+              src="img/corte3.jpg"
+              alt="Estilo de barba"
+            >
+
+          </div>
+
+          <div class="gallery-item">
+
+            <img
+              src="img/portada.jpg"
+              alt="The BarberG Studio"
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+       UBICACIÓN
+    ========================== -->
+
+    <section
+      id="ubicacion"
+      class="section location"
+    >
+
+      <div class="container location-container">
+
+        <div class="location-info">
+
+          <p class="section-label">
+            VEN A VERNOS
+          </p>
+
+          <h2>
+            Encuéntranos
+          </h2>
+
+          <p>
+            Estamos preparados para darle
+            a tu estilo el toque que estás buscando.
+          </p>
+
+          <div class="location-data">
+
+            <div>
+
+              <span>
+                📍
+              </span>
+
+              <div>
+
+                <strong>
+                  Dirección
+                </strong>
+
+                <p>
+                  Próximamente
+                </p>
+
+              </div>
+
+            </div>
+
+            <div>
+
+              <span>
+                🕐
+              </span>
+
+              <div>
+
+                <strong>
+                  Horario
+                </strong>
+
+                <p>
+                  Consulta disponibilidad
+                </p>
+
+              </div>
+
+            </div>
+
+            <div>
+
+              <span>
+                💬
+              </span>
+
+              <div>
+
+                <strong>
+                  Reservas
+                </strong>
+
+                <p>
+                  Por WhatsApp
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <a
+            href="https://wa.me/34633063177?text=Hola,%20quiero%20consultar%20disponibilidad."
+            target="_blank"
+            class="btn btn-primary"
+          >
+
+            Consultar disponibilidad
+
+          </a>
+
+        </div>
+
+        <div class="map-placeholder">
+
+          <span>
+            📍
+          </span>
+
+          <h3>
+            Google Maps
+          </h3>
+
+          <p>
+            Añadiremos la ubicación próximamente
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+       CONTACTO / RESERVAS
+    ========================== -->
+
+    <section
+      id="contacto"
+      class="contact"
+    >
+
+      <div class="container contact-container">
+
+        <p>
+          ¿LISTO PARA TU PRÓXIMO LOOK?
+        </p>
+
+        <h2>
+          Reserva tu cita
+        </h2>
+
+        <span>
+          Escríbenos por WhatsApp y reserva tu hora.
+        </span>
+
+        <a
+          href="https://wa.me/34633063177?text=Hola%20The%20BarberG%20Studio,%20quiero%20reservar%20una%20cita."
+          target="_blank"
+          class="btn btn-whatsapp"
+        >
+
+          💬 Reservar por WhatsApp
+
+        </a>
+
+      </div>
+
+    </section>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© The BarberG Studio — Todos los derechos reservados</p>
+  <!-- =========================
+     FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="container footer-container">
+
+      <div>
+
+        <h3>
+          The BarberG
+          <span>
+            Studio
+          </span>
+        </h3>
+
+        <p>
+          TU ESTILO. TU IDENTIDAD.
+        </p>
+
+      </div>
+
+      <div class="social">
+
+        <a
+          href="#"
+          aria-label="Instagram"
+        >
+          Instagram
+        </a>
+
+        <a
+          href="https://wa.me/34633063177"
+          target="_blank"
+          aria-label="WhatsApp"
+        >
+          WhatsApp
+        </a>
+
+      </div>
+
     </div>
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 The BarberG Studio.
+        Todos los derechos reservados.
+      </p>
+
+    </div>
+
   </footer>
 
+  <!-- =========================
+     JAVASCRIPT
+  ========================== -->
+
   <script src="js/script.js"></script>
+
 </body>
+
 </html>
