@@ -282,7 +282,6 @@ nav a:hover {
 /* BOTÓN MENÚ MÓVIL */
 
 .menu-toggle {
-
   display: none;
   background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.08);
@@ -291,7 +290,7 @@ nav a:hover {
   padding: 8px 12px;
   border-radius: 999px;
   cursor: pointer;
-
+}
 
 /* Responsive: mostrar botón y convertir nav en panel */
 @media (max-width: 900px) {
@@ -328,7 +327,6 @@ nav a:hover {
     width: auto;
     align-self: flex-start;
   }
-}
 }
 
 /* =====================================================
