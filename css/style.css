@@ -1,0 +1,23 @@
+/* Estilos básicos para The-BarberG-Studio */
+:root{
+  --bg:#ffffff;
+  --text:#222;
+  --accent:#1a1a1a;
+  --muted:#777;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:var(--text);background:var(--bg)}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+.site-header{background:#f8f8f8;border-bottom:1px solid #eee}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{height:56px}
+.nav a{margin-left:1rem;color:var(--muted);text-decoration:none}
+.hero{position:relative}
+.hero img{width:100%;height:360px;object-fit:cover;display:block}
+.hero-text{position:absolute;left:1rem;bottom:1.25rem;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,.5)}
+.hero-text h1{margin:0;font-size:2rem}
+.servicios ul{list-style:disc;margin-left:1.25rem}
+.galeria .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.galeria img{width:100%;height:220px;object-fit:cover;border-radius:6px}
+.site-footer{background:#111;color:#fff;padding:1rem;margin-top:2rem}
+@media (max-width:600px){.hero img{height:220px}.site-header .container{padding:0.5rem}.logo{height:44px}}
