@@ -9,15 +9,17 @@
 
 :root {
 
-  --black: #080808;
-  --black-light: #111111;
-  --dark-card: #171717;
+  --black: #06080f;
+  --black-light: #101726;
+  --dark-card: #141b26;
 
-  --white: #ffffff;
-  --gray: #a5a5a5;
+  --white: #f8fafc;
+  --gray: #9ca3af;
+  --gray-light: #d1d5db;
 
-  --gold: #c7a76b;
-  --gold-light: #dfc38c;
+  --blue: #3b82f6;
+  --blue-light: #60a5fa;
+  --blue-muted: #7c93c2;
 
   --font-main: "Montserrat", sans-serif;
   --font-title: "Oswald", sans-serif;
@@ -119,25 +121,56 @@ ul {
 /* LOGO */
 
 .logo {
-
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
   font-family: var(--font-title);
-
-  font-size: 28px;
-
+  font-size: 18px;
   font-weight: 700;
-
   text-transform: uppercase;
-
   letter-spacing: 1px;
-
 }
 
-.logo span {
-
-  color: var(--gold);
-
+.navbar-container {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
 }
 
+.logo-image {
+  width: 56px;
+  height: auto;
+  display: block;
+}
+
+.logo-text {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1.05;
+  color: var(--white);
+  text-align: left;
+}
+
+.logo-name {
+  color: var(--white);
+  font-size: 14px;
+}
+
+.logo-brand {
+  color: var(--blue);
+  font-size: 18px;
+}
+
+.logo-tag {
+  color: var(--white);
+  font-size: 11px;
+  letter-spacing: 2px;
+}
 /* MENU */
 
 nav {
@@ -166,7 +199,7 @@ nav a {
 
 nav a:hover {
 
-  color: var(--gold);
+  color: var(--blue-light);
 
 }
 
@@ -176,7 +209,7 @@ nav a:hover {
 
   padding: 12px 22px;
 
-  background: var(--gold);
+  background: var(--blue);
 
   color: var(--black);
 
@@ -184,7 +217,7 @@ nav a:hover {
 
 .nav-button:hover {
 
-  background: var(--gold-light);
+  background: var(--blue-light);
 
   color: var(--black);
 
@@ -242,9 +275,9 @@ nav a:hover {
 
     linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.95),
-      rgba(0, 0, 0, 0.60),
-      rgba(0, 0, 0, 0.75)
+      rgba(8, 12, 22, 0.95),
+      rgba(6, 11, 23, 0.70),
+      rgba(8, 14, 27, 0.82)
     );
 
 }
@@ -269,7 +302,7 @@ nav a:hover {
 
 .hero-small {
 
-  color: var(--gold);
+  color: var(--blue-light);
 
   font-size: 13px;
 
@@ -299,7 +332,7 @@ nav a:hover {
 
 .hero h1 span {
 
-  color: var(--gold);
+  color: var(--blue-light);
 
 }
 
@@ -357,7 +390,7 @@ nav a:hover {
 
 .btn-primary {
 
-  background: var(--gold);
+  background: var(--blue);
 
   color: var(--black);
 
@@ -365,7 +398,7 @@ nav a:hover {
 
 .btn-primary:hover {
 
-  background: var(--gold-light);
+  background: var(--blue-light);
 
   transform: translateY(-3px);
 
@@ -401,7 +434,7 @@ nav a:hover {
 
   transform: translateX(-50%);
 
-  color: var(--gold);
+  color: var(--blue-light);
 
   font-size: 30px;
 
@@ -448,7 +481,7 @@ nav a:hover {
 
 .section-title p {
 
-  color: var(--gold);
+  color: var(--blue-light);
 
   font-size: 11px;
 
@@ -482,7 +515,7 @@ nav a:hover {
 
   margin: 20px auto 0;
 
-  background: var(--gold);
+  background: var(--blue);
 
 }
 
@@ -524,7 +557,7 @@ nav a:hover {
 
   transform: translateY(-8px);
 
-  border-color: var(--gold);
+  border-color: var(--blue-light);
 
   box-shadow:
 
@@ -536,7 +569,7 @@ nav a:hover {
 
 .service-icon {
 
-  color: var(--gold);
+  color: var(--blue-light);
 
   font-size: 32px;
 
@@ -590,7 +623,7 @@ nav a:hover {
 
 .service-bottom strong {
 
-  color: var(--gold);
+  color: var(--blue-light);
 
   font-size: 22px;
 
@@ -608,7 +641,7 @@ nav a:hover {
 
 .service-bottom a:hover {
 
-  color: var(--gold);
+  color: var(--blue-light);
 
 }
 
@@ -684,9 +717,7 @@ nav a:hover {
 
 .section-label {
 
-  color: var(--gold);
-
-  font-size: 11px;
+    color: var(--blue-light);
 
   font-weight: 700;
 
@@ -790,9 +821,7 @@ nav a:hover {
 
 .map-placeholder > span {
 
-  color: var(--gold);
-
-  font-size: 50px;
+    color: var(--blue-light);
 
   margin-bottom: 15px;
 
@@ -851,9 +880,7 @@ nav a:hover {
 
 .contact-container > p {
 
-  color: var(--gold);
-
-  font-size: 11px;
+    color: var(--blue-light);
 
   font-weight: 700;
 
@@ -885,9 +912,9 @@ nav a:hover {
 
 .btn-whatsapp {
 
-  background: #25d366;
+  background: var(--blue);
 
-  color: white;
+  color: var(--black);
 
 }
 
@@ -896,6 +923,38 @@ nav a:hover {
   transform: translateY(-3px);
 
   opacity: 0.9;
+
+}
+
+.btn-instagram {
+
+  background: #121212;
+
+  color: var(--white);
+
+  border: 1px solid var(--blue-light);
+
+}
+
+.btn-instagram:hover {
+
+  background: var(--blue);
+
+  color: var(--black);
+
+  transform: translateY(-3px);
+
+}
+
+.contact-actions {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 16px;
+
+  margin-top: 25px;
 
 }
 
@@ -935,7 +994,7 @@ footer {
 
 .footer-container h3 span {
 
-  color: var(--gold);
+  color: var(--blue-light);
 
 }
 
@@ -985,11 +1044,11 @@ footer {
 
 .social a:hover {
 
-  background: var(--gold);
+  background: var(--blue);
 
   color: var(--black);
 
-  border-color: var(--gold);
+  border-color: var(--blue);
 
 }
 
