@@ -284,17 +284,51 @@ nav a:hover {
 .menu-toggle {
 
   display: none;
-
-  background: transparent;
-
-  border: none;
-
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.08);
   color: var(--white);
-
-  font-size: 30px;
-
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 999px;
   cursor: pointer;
 
+
+/* Responsive: mostrar botón y convertir nav en panel */
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.open {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(0,0,0,0.65);
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    padding: 14px;
+    z-index: 1100;
+  }
+
+  nav.open a {
+    color: var(--white);
+    padding: 10px 12px;
+    border-radius: 8px;
+  }
+
+  .nav-button {
+    width: auto;
+    align-self: flex-start;
+  }
+}
 }
 
 /* =====================================================

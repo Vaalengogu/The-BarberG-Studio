@@ -8,4 +8,15 @@ document.addEventListener('DOMContentLoaded', function(){
       window.open(img.src, '_blank');
     });
   });
+
+  // Toggle menú móvil
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.getElementById('navMenu');
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', function(){
+      navMenu.classList.toggle('open');
+      // accessible text
+      this.setAttribute('aria-expanded', navMenu.classList.contains('open'))
+    });
+  }
 });
